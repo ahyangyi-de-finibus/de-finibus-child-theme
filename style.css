@@ -24,7 +24,7 @@
  * The Byline, or subntitle
  */
 .byline {
-    font-weight: 200;
+    font-weight: 200 !important;
     font-style: italic;
     color: #aaaaaa !important;
 }
