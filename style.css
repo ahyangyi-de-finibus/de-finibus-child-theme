@@ -1,8 +1,129 @@
 /*
- Theme Name:   De Finibus
- Theme URI:    http://blog.ahyangyi.org
- Description:  De Finibus Theme, based on Kahuna
- Author:       Yi Yang
- Author URI:   http://blog.ahyangyi.org
- Template:     kahuna
-*/
+    Theme Name:   De Finibus
+    Theme URI:    http://blog.ahyangyi.org
+    Description:  De Finibus Theme, based on Kahuna
+    Author:       Yi Yang
+    Author URI:   http://blog.ahyangyi.org
+    Template:     kahuna
+ */
+
+/*
+ * The title
+ */
+#header-image-main .entry-title {
+    font-weight: 100;
+    font-size: 400%;
+}
+@media print {
+    #header-image-main .entry-title {
+        color: #000000;
+    }
+}
+
+/*
+ * The Byline, or subntitle
+ */
+.byline {
+    font-weight: 200;
+    font-style: italic;
+    color: #aaaaaa !important;
+}
+@media print {
+    .byline {
+        color: #000000 !important;
+    }
+}
+
+/*
+ * Override body text color by
+ *  using opacity instead.
+ *
+ * Also, set up proper fallbacks.
+ */
+body {
+    color: #000000ae;
+    font-family: AdagioSerif,Times New Roman,times,serif;
+    font-feature-settings: "liga";
+}
+
+/*
+ * Copyright fonts: do not italicize
+ */
+#site-copyright {
+    font-style: normal;
+}
+
+/* Masthead backgrounds */
+#masthead {
+    border-bottom: 5px solid #6086a8 !important;
+}
+@media print {
+    #masthead {
+        border-bottom: 2px solid #000000 !important;
+    }
+}
+
+#header-image-main-inside {
+    background-color: #405360;
+}
+
+/* Widgets */
+.widget-title span {
+    padding-bottom: .5em;
+}
+
+/* Fix the blockquote styling in Kahuna */
+blockquote {
+    font-family: AdagioSerif;
+}
+blockquote p {
+    font-weight: 300;
+}
+.entry-content blockquote::before {
+    content: '”';
+    font-size: 6em;
+    font-family: AdagioSerif;
+    font-weight: 300;
+    font-style: normal;
+    left: 0.2em;
+    top: 8%;
+}
+blockquote cite {
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+/* Override LaTeX2HTML */
+.latex_prob,.latex_examp,.latex_excs,.latex_claim,.latex_answer,.latex_thm,.latex_lem,.latex_cor,.latex_defn,.latex_prop,.latex_rem {
+    margin:10px 0;
+    padding:5px;
+    border: none;
+    border-bottom:solid 3px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    display:block;
+}
+
+.latex_thm,.latex_lem,.latex_cor,.latex_defn,.latex_prop,.latex_rem {
+    background:#e0ebf4;
+    border-bottom-color: #00c0ff;
+}
+
+.latex_prob,.latex_examp,.latex_excs,.latex_claim,.latex_answer {
+    background:#f0f0f0;
+    border-bottom-color: #378aba;
+}
+
+.bibtex_title{
+    font-weight:inherit;
+    font-style: italic;
+    color:inherit;
+}
+
+.bibtex_h{
+    font-weight: 300;
+    font-variant: none;
+}
