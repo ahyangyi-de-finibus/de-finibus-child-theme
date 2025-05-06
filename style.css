@@ -1,10 +1,10 @@
 /*
     Theme Name:   De Finibus
-    Theme URI:    http://www.cryoutcreations.eu/wordpress-themes/kahuna
+    Theme URI:    https://github.com/ahyangyi-de-finibus/de-finibus-child-theme
     Description:  De Finibus Theme, based on Kahuna
     Author:       Yi Yang
     Author URI:   http://blog.ahyangyi.org
-    Template:     kahuna
+    Template:     Kahuna
  */
 
 /*
@@ -21,7 +21,7 @@
 }
 
 /*
- * The Byline, or subntitle
+ * The Byline, or subtitle
  */
 .byline {
     font-weight: 200 !important;
