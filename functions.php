@@ -10,9 +10,8 @@ function de_finibus_enqueue_styles() {
 add_filter( 'big_image_size_threshold', '__return_false' );
 
 // Insert meta tag
-function de_finibus_meta_theme_color() { ?>
-    "<meta name="theme-color" content="#378aba">"
-<?
+function de_finibus_meta_theme_color() {
+    echo "<meta name=\"theme-color\" content=\"#378aba\">";
 }
 function de_finibus_register_hooks() {
   add_action('cryout_meta_hook','de_finibus_meta_theme_color');
