@@ -11,6 +11,6 @@ add_filter( 'big_image_size_threshold', '__return_false' );
 
 // Insert meta tag
 function de_finibus_meta_theme_color() {
-    echo "<meta name=\"theme-color\" content=\"" . cryout_get_option("kahuna_accent1") . "\">";
+    echo "<meta name=\"theme-color\" content=\"" . esc_html(cryout_get_option("kahuna_accent1")) . "\">";
 }
 add_action('cryout_meta_hook','de_finibus_meta_theme_color');
