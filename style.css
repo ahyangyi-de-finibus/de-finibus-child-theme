@@ -4,7 +4,7 @@
     Description:  De Finibus Theme, based on Kahuna
     Author:       Yi Yang
     Author URI:   http://blog.ahyangyi.org
-    Version:      0.3
+    Version:      0.4
     Template:     kahuna
  */
 
@@ -95,6 +95,34 @@ blockquote cite {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9em;
+}
+
+/* Experimental: Dark Mode */
+
+@media(prefers-color-scheme:dark) {
+    body {
+        color: #c0c0c0 !important;
+        background-color: #20282f !important;
+    }
+    body:not(.kahuna-landing-page) article.hentry, body:not(.kahuna-landing-page) .main, body.kahuna-boxed-layout:not(.kahuna-landing-page) #container  {
+        background-color: #202224 !important;
+        color: #f0f0f0 !important;
+    }
+    code, #nav-below .nav-previous a:before, #nav-below .nav-next a:before {
+        background-color: #404244 !important;
+    }
+    #masthead {
+        border-bottom: 5px solid #507698 !important;
+    }
+    .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .lp-text-content h1, .lp-text-content h2, .lp-text-content h3, .lp-text-content h4 {
+        color: #c0c0c0 !important;
+    }
+    .entry-meta span, .entry-meta a, .entry-utility span, .entry-utility a, .entry-meta time, #breadcrumbs-nav, #header-page-title .byline, .footermenu ul li span.sep {
+        color: #a0a0a0 !important;
+    }
+    .entry-meta .icon-metas:before {
+        color: #a0a0a0 !important;
+    }
 }
 
 /* Override LaTeX2HTML */
