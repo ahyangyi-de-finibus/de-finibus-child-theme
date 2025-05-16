@@ -88,6 +88,7 @@ blockquote p {
     font-style: normal;
     left: 0.2em;
     top: 8%;
+    color: light-dark(rgba(81,81,81,0.2), rgba(255,255,255,0.2)) !important;
 }
 blockquote cite {
     font-weight: 400;
@@ -95,6 +96,12 @@ blockquote cite {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9em;
+}
+
+/* Extra code settings */
+pre.ascii-art > code,
+pre.ascii-art {
+    line-height: 1 !important;
 }
 
 /* Experimental: Dark Mode */
@@ -123,6 +130,28 @@ blockquote cite {
     .entry-meta .icon-metas:before {
         color: #a0a0a0 !important;
     }
+
+    /* Code Plugin */
+    code[class*="language-"],
+    pre[class*="language-"] {
+        color: #ffffffd8 !important;
+    }
+
+    .token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog {
+        color: #ffffff80 !important;
+    }
+
+    .token.punctuation {
+        color: #ffffffc0 !important;
+    }
+
+    .token.attr-value,.token.class-name,.token.entity,.token.operator,.token.url,.token.variable,.token.builtin,.token.function {
+        color: #46aadb !important;
+    }
+
+    .token.atrule,.token.keyword {
+        color: #00bfff !important;
+    }
 }
 
 /* Override LaTeX2HTML */
@@ -137,12 +166,12 @@ blockquote cite {
 }
 
 .latex_thm,.latex_lem,.latex_cor,.latex_defn,.latex_prop,.latex_rem {
-    background:#e0ebf4;
+    background:light-dark(#e0ebf4, #00405d);
     border-bottom-color: #00c0ff;
 }
 
 .latex_prob,.latex_examp,.latex_excs,.latex_claim,.latex_answer {
-    background:#f0f0f0;
+    background:light-dark(#f0f0f0, #383838);
     border-bottom-color: #378aba;
 }
 
