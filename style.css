@@ -4,7 +4,7 @@
     Description:  De Finibus Theme, based on Kahuna
     Author:       Yi Yang
     Author URI:   http://blog.ahyangyi.org
-    Version:      0.4
+    Version:      0.5
     Template:     kahuna
  */
 
@@ -54,18 +54,21 @@ body {
     font-style: normal;
 }
 
-/* Masthead backgrounds */
+/* Header backgrounds */
+#site-header-main, #site-header-main.header-fixed #site-header-main-inside, #access ul ul, .menu-search-animated .searchform input[type="search"], #access .menu-search-animated .searchform, #access::after, .kahuna-over-menu .header-fixed#site-header-main, .kahuna-over-menu .header-fixed#site-header-main #access:after,
+nav#mobile-menu {
+    background-color: light-dark(#2f434d, #1f333d) !important;
+}
+#header-image-main-inside {
+    background-color: light-dark(#435462, #2c3d4a);
+}
 #masthead {
-    border-bottom: 5px solid #6086a8 !important;
+    border-bottom: 5px solid light-dark(#6a96b5, #366380) !important;
 }
 @media print {
     #masthead {
         border-bottom: 2px solid #000000 !important;
     }
-}
-
-#header-image-main-inside {
-    background-color: #405360;
 }
 
 /* Widgets */
@@ -105,18 +108,8 @@ pre.ascii-art {
 }
 
 /* Override: this would go to the prism theme instead */
-:not(pre)>code[class*=language-] {
-    border-color: light-dark(#eeeeee, #505050) !important;
-    background-color: light-dark(#f8f8f8, #404244) !important;
-}
 pre {
-    border-color: light-dark(#eeeeee, #505050) !important;
-    background-color: light-dark(#f8f8f8, #404244) !important;
-}
-
-.token.decorator {
-    text-decoration: underline;
-    color: #285a84;
+    border-color: light-dark(#e2e2e5, #242628) !important;
 }
 
 /* Flexbox Palette
@@ -150,52 +143,29 @@ pre {
 }
 
 /* Experimental: Dark Mode */
+span.edit-link a.post-edit-link, span.edit-link a.post-edit-link:hover, span.edit-link .icon-edit:before {
+    color: light-dark(#515355, #9c9ea0) !important;
+}
+
+.entry-meta span, .entry-meta a, .entry-utility span, .entry-utility a, .entry-meta time, #breadcrumbs-nav, #header-page-title .byline, .footermenu ul li span.sep,
+.entry-meta .icon-metas:before {
+    color: light-dark(#5d5e61, #8f9193) !important;
+}
 
 @media(prefers-color-scheme:dark) {
     body {
         color: #c0c0c0 !important;
-        background-color: #20282f !important;
+        background-color: #151d21 !important;
     }
     body:not(.kahuna-landing-page) article.hentry, body:not(.kahuna-landing-page) .main, body.kahuna-boxed-layout:not(.kahuna-landing-page) #container  {
-        background-color: #202224 !important;
+        background-color: #0b1216 !important;
         color: #f0f0f0 !important;
     }
     code, #nav-below .nav-previous a:before, #nav-below .nav-next a:before {
         background-color: #404244 !important;
     }
-    #masthead {
-        border-bottom: 5px solid #507698 !important;
-    }
     .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .lp-text-content h1, .lp-text-content h2, .lp-text-content h3, .lp-text-content h4 {
         color: #c0c0c0 !important;
-    }
-    .entry-meta span, .entry-meta a, .entry-utility span, .entry-utility a, .entry-meta time, #breadcrumbs-nav, #header-page-title .byline, .footermenu ul li span.sep {
-        color: #a0a0a0 !important;
-    }
-    .entry-meta .icon-metas:before {
-        color: #a0a0a0 !important;
-    }
-
-    /* Code Plugin */
-    code[class*="language-"],
-    pre[class*="language-"] {
-        color: #ffffffd8 !important;
-    }
-
-    .token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog {
-        color: #ffffff80 !important;
-    }
-
-    .token.punctuation {
-        color: #ffffffc0 !important;
-    }
-
-    .token.attr-value,.token.class-name,.token.entity,.token.operator,.token.url,.token.variable,.token.builtin,.token.function {
-        color: #46aadb !important;
-    }
-
-    .token.atrule,.token.keyword {
-        color: #00bfff !important;
     }
 }
 
