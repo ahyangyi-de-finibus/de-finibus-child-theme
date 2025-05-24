@@ -4,36 +4,9 @@
     Description:  De Finibus Theme, based on Kahuna
     Author:       Yi Yang
     Author URI:   http://blog.ahyangyi.org
-    Version:      0.5
+    Version:      0.6
     Template:     kahuna
  */
-
-/*
- * The title
- */
-#header-image-main .entry-title {
-    font-weight: 100;
-    font-size: 400%;
-}
-@media print {
-    #header-image-main .entry-title {
-        color: #000000;
-    }
-}
-
-/*
- * The Byline, or subtitle
- */
-.byline {
-    font-weight: 200 !important;
-    font-style: italic;
-    color: #aaaaaa !important;
-}
-@media print {
-    .byline {
-        color: #000000 !important;
-    }
-}
 
 /*
  * Override body text color by
@@ -52,23 +25,6 @@ body {
  */
 #site-copyright {
     font-style: normal;
-}
-
-/* Header backgrounds */
-#site-header-main, #site-header-main.header-fixed #site-header-main-inside, #access ul ul, .menu-search-animated .searchform input[type="search"], #access .menu-search-animated .searchform, #access::after, .kahuna-over-menu .header-fixed#site-header-main, .kahuna-over-menu .header-fixed#site-header-main #access:after,
-nav#mobile-menu {
-    background-color: light-dark(#2f434d, #1f333d) !important;
-}
-#header-image-main-inside {
-    background-color: light-dark(#435462, #2c3d4a);
-}
-#masthead {
-    border-bottom: 5px solid light-dark(#6a96b5, #366380) !important;
-}
-@media print {
-    #masthead {
-        border-bottom: 2px solid #000000 !important;
-    }
 }
 
 /* Widgets */
@@ -107,11 +63,6 @@ pre.ascii-art {
     line-height: 1.15 !important;
 }
 
-/* Override: this would go to the prism theme instead */
-pre {
-    border-color: light-dark(#e2e2e5, #242628) !important;
-}
-
 /* Flexbox Palette
  * Used in places such as https://blog.ahyangyi.org/the-color-scheme-part-ii/ */
 .de-finibus-palette {
@@ -139,33 +90,6 @@ pre {
             text-align: center;
             font-feature-settings: "liga" 0;
         }
-    }
-}
-
-/* Experimental: Dark Mode */
-span.edit-link a.post-edit-link, span.edit-link a.post-edit-link:hover, span.edit-link .icon-edit:before {
-    color: light-dark(#515355, #9c9ea0) !important;
-}
-
-.entry-meta span, .entry-meta a, .entry-utility span, .entry-utility a, .entry-meta time, #breadcrumbs-nav, #header-page-title .byline, .footermenu ul li span.sep,
-.entry-meta .icon-metas:before {
-    color: light-dark(#5d5e61, #8f9193) !important;
-}
-
-@media(prefers-color-scheme:dark) {
-    body {
-        color: #c0c0c0 !important;
-        background-color: #151d21 !important;
-    }
-    body:not(.kahuna-landing-page) article.hentry, body:not(.kahuna-landing-page) .main, body.kahuna-boxed-layout:not(.kahuna-landing-page) #container  {
-        background-color: #0b1216 !important;
-        color: #f0f0f0 !important;
-    }
-    code, #nav-below .nav-previous a:before, #nav-below .nav-next a:before {
-        background-color: #404244 !important;
-    }
-    .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .lp-text-content h1, .lp-text-content h2, .lp-text-content h3, .lp-text-content h4 {
-        color: #c0c0c0 !important;
     }
 }
 
