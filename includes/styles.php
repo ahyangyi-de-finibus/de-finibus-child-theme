@@ -57,12 +57,37 @@ nav#mobile-menu {
 }
 
 /* Main Section */
-
-/* Experimental: Dark Mode */
-span.edit-link a.post-edit-link, span.edit-link a.post-edit-link:hover, span.edit-link .icon-edit:before {
-    color: light-dark(#515355, #9c9ea0);
+body {
+    background-color: light-dark(#dce3e9, #151d21);
+    color: light-dark(#242628, #c5c6c9);
+    @media (prefers-contrast: less) {
+        color: light-dark(#515355, #8f9193);
+    }
+    @media (prefers-contrast: more) {
+        color: light-dark(#000000, #ffffff);
+    }
 }
-
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.lp-text-content h1,
+.lp-text-content h2,
+.lp-text-content h3,
+.lp-text-content h4 {
+    color: light-dark(#191c1e, #e2e2e5);
+    @media (prefers-contrast: less) {
+        color: light-dark(#454749, #aaabae);
+    }
+    @media (prefers-contrast: more) {
+        color: light-dark(#000000, #ffffff);
+    }
+}
+body:not(.kahuna-landing-page) article.hentry,
+body:not(.kahuna-landing-page) .main,
+body.kahuna-boxed-layout:not(.kahuna-landing-page) #container  {
+    background-color: light-dark(#ffffff, #0b1216);
+}
 .entry-meta span,
 .entry-meta a,
 .entry-utility span,
@@ -74,19 +99,15 @@ span.edit-link a.post-edit-link, span.edit-link a.post-edit-link:hover, span.edi
 .entry-meta .icon-metas:before {
     color: light-dark(#5d5e61, #8f9193);
 }
+span.edit-link a.post-edit-link,
+span.edit-link a.post-edit-link:hover,
+span.edit-link .icon-edit:before {
+    color: light-dark(#515355, #9c9ea0);
+}
+
+/* Experimental: Dark Mode */
 
 @media(prefers-color-scheme:dark) {
-    body {
-        color: #c0c0c0;
-        background-color: #151d21;
-    }
-    body:not(.kahuna-landing-page) article.hentry, body:not(.kahuna-landing-page) .main, body.kahuna-boxed-layout:not(.kahuna-landing-page) #container  {
-        background-color: #0b1216;
-        color: #f0f0f0;
-    }
-    .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .lp-text-content h1, .lp-text-content h2, .lp-text-content h3, .lp-text-content h4 {
-        color: #c0c0c0;
-    }
 }
 
 /* pre and code handling */
@@ -104,8 +125,20 @@ code, pre {
     border-width: 0;
 }
 
-pre:not(:has(code)), code {
+pre:not(:has(code)),
+pre:not([class*="language-"]),
+:not(pre) > code {
     border: 1px solid light-dark(#e2e2e5, #242628);
+}
+
+pre > code {
+    padding: 0;
+}
+
+/* FIXME: this goes to PrismJS */
+pre[class*="language-"]>code {
+    border-left: 1px solid light-dark(#e2e2e5, #242628);
+    border-right: 1px solid light-dark(#e2e2e5, #242628);
 }
 
 <?php
