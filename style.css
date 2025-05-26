@@ -57,7 +57,13 @@ blockquote cite {
     font-size: 0.9em;
 }
 
-/* Extra code settings */
+/* Custom Classes */
+.trpg-rai {
+    color: light-dark(#00587e, #4898c9);
+    font-style: italic;
+}
+
+/* Custom Classes for Code */
 pre.ascii-art > code,
 pre.ascii-art {
     line-height: 1.15 !important;
@@ -105,13 +111,13 @@ pre.ascii-art {
 }
 
 .latex_thm,.latex_lem,.latex_cor,.latex_defn,.latex_prop,.latex_rem {
-    background:light-dark(#e0ebf4, #00405d);
-    border-bottom-color: #00c0ff;
+    background:light-dark(#c8e6ff, #00293d);
+    border-bottom-color: light-dark(#00c1f9, #009cca);
 }
 
 .latex_prob,.latex_examp,.latex_excs,.latex_claim,.latex_answer {
-    background:light-dark(#f0f0f0, #383838);
-    border-bottom-color: #378aba;
+    background:light-dark(#dde3ea, #20272c);
+    border-bottom-color: light-dark(#378aba, #277eae);
 }
 
 .bibtex_title{

@@ -75,7 +75,7 @@ body {
 .lp-text-content h2,
 .lp-text-content h3,
 .lp-text-content h4 {
-    color: light-dark(#191c1e, #e2e2e5);
+    color: light-dark(#191c1e, #d3d4d7);
     @media (prefers-contrast: less) {
         color: light-dark(#454749, #aaabae);
     }
