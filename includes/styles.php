@@ -105,9 +105,17 @@ span.edit-link .icon-edit:before {
     color: light-dark(#515355, #9c9ea0);
 }
 
-/* Experimental: Dark Mode */
+/* Footer */
+#colophon {
+    border-top-color: light-dark(#48545d, #313d46);
+}
 
-@media(prefers-color-scheme:dark) {
+#colophon, #footer {
+    background-color: light-dark(#26323a, #1c272f);
+}
+
+#footer-bottom {
+    background-color: light-dark(#1c272f, #111d25);
 }
 
 /* pre and code handling */
