@@ -143,12 +143,6 @@ pre > code {
     padding: 0;
 }
 
-/* FIXME: this goes to PrismJS */
-pre[class*="language-"]>code {
-    border-left: 1px solid light-dark(#e2e2e5, #242628);
-    border-right: 1px solid light-dark(#e2e2e5, #242628);
-}
-
 <?php
     return ob_get_clean();
 }
