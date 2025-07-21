@@ -148,3 +148,25 @@ pre.ascii-art {
     font-size: 120%;
     display: block;
 }
+
+/* Card
+ * */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: light-dark(color(display-p3 0.79857 0.90099 1), color(display-p3 0 0.1582 0.25472));
+    background-clip: border-box;
+    border-bottom:3px solid light-dark(#00c1f9, color(display-p3 0 0.61082 0.83026));
+    margin-bottom: 1rem;
+
+    header {
+        background-color: light-dark(color(display-p3 0.57989 0.80279 0.99375), color(display-p3 0 0.202 0.31843));
+    }
+
+    footer {
+        background-color: light-dark(color(display-p3 0.9036 0.94953 1), color(display-p3 0 0.11612 0.19356));
+    }
+}
