@@ -2,6 +2,21 @@
 function de_finibus_custom_styles() {
     ob_start();
 ?>
+/*
+ * Generic styling
+ */
+a {
+    color: light-dark(color(display-p3 0.13794 0.38933 0.56114), color(display-p3 0.36485 0.58967 0.77079));
+}
+#footer {
+    a {
+        color: color(display-p3 0.36485 0.58967 0.77079);
+    }
+    /* Repeat a:hover with higher specificity */
+    a:hover, .entry-meta span a:hover, .comments-link a:hover {
+        color: #00c1f9;
+    }
+}
 
 /*
  * The title
