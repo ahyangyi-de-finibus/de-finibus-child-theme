@@ -133,10 +133,17 @@ span.edit-link .icon-edit:before {
     background-color: light-dark(#1c272f, #111d25);
 }
 
-/* Button-like objects */
+/* Box UI elements */
 .kahuna-normalizedtags #content .tagcloud a,
 a.continue-reading-link, .continue-reading-link::after {
     background-color: light-dark(#378aba, color(display-p3 0.13794 0.38933 0.56114));
+}
+
+.pagination a, .pagination span {
+    border-color: light-dark(#f0f0f3, #2b3136);
+}
+.pagination a:hover, .pagination span:hover, .page-link a:hover, .page-link span em:hover {
+    background-color: light-dark(#f0f0f3, #2b3136);
 }
 
 /* pre and code handling */
