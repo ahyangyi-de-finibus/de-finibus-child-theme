@@ -10,7 +10,7 @@ a {
 }
 #footer {
     a {
-        color: color(display-p3 0.36485 0.58967 0.77079);
+        color: color(display-p3 0.47195 0.69476 0.8808);
     }
     /* Repeat a:hover with higher specificity */
     a:hover, .entry-meta span a:hover, .comments-link a:hover {
@@ -131,6 +131,12 @@ span.edit-link .icon-edit:before {
 
 #footer-bottom {
     background-color: light-dark(#1c272f, #111d25);
+}
+
+/* Button-like objects */
+.kahuna-normalizedtags #content .tagcloud a,
+a.continue-reading-link, .continue-reading-link::after {
+    background-color: light-dark(#378aba, color(display-p3 0.13794 0.38933 0.56114));
 }
 
 /* pre and code handling */
