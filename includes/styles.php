@@ -146,6 +146,15 @@ a.continue-reading-link, .continue-reading-link::after {
     background-color: light-dark(#f0f0f3, #2b3136);
 }
 
+select, input[type], textarea {
+    color: light-dark(#242628, #e2e2e5);
+    border-color: light-dark(#e2e2e5, #393c3e);
+}
+input[type]:hover, textarea:hover, select:hover, input[type]:focus, textarea:focus, select:focus {
+    color: light-dark(#191c1e, #ffffff);
+    background: light-dark(#f0f0f3, #2b3136);
+}
+
 /* pre and code handling */
 code, #nav-below .nav-previous a:before, #nav-below .nav-next a:before {
     background-color: light-dark(#f0f0f3, #191c1e);
